@@ -1,0 +1,22 @@
+<template>
+<view class="fui-cell-group fui-shop-group">
+      <navigator class="fui-list" open-type="switchTab" url="/pages/index/index">
+          <view class="fui-list-media"><image :src="goods.shopdetail.logo"></image></view>
+          <view class="fui-list-inner">
+              <view class="title">{{goods.shopdetail.shopname}}<text class="title-wel">进店逛逛</text></view>
+              <block v-if="goods.shopdetail.description">
+                  <view class="subtitle">{{goods.shopdetail.description}}</view>
+              </block>
+          </view>
+      </navigator>
+  </view>
+</template>
+
+
+	<script> 
+		
+		export default {
+			props: []
+		}
+	</script> 
+									

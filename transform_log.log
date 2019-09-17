@@ -1,0 +1,262 @@
+miniprogram to uni-app 转换日志
+
+---基本信息---
+时间: 2019-09-17 23:30:01
+转换模式: Hbuilder X
+是否转换wxs文件: true
+
+---小程序基本信息---
+name: 人人商城api
+version:
+description:
+appid: wx04fe8dc8599989b1
+projectname:
+compileType: miniprogram
+author:
+
+---目录信息---
+sourceFolder: /Users/terry/EWEIWX
+targetFolder: /Users/terry/EWEIWX_uni
+outputFolder: /Users/terry/EWEIWX_uni
+miniprogramRoot: /Users/terry/EWEIWX
+
+---日志信息---
+Convert wxs file /Users/terry/EWEIWX_uni/pages/diy/tool.js success!
+image漏网之鱼:    src--> "{{item.avatar}}"     file--> friendcoupon/index.wxml
+image漏网之鱼:    src--> "{{ list.head_image }}"     file--> bargain/bargain/bargain.wxml
+image漏网之鱼:    src--> "{{ bargain.thumb }}"     file--> bargain/bargain/bargain.wxml
+image漏网之鱼:    src--> "{{ item.head_image }}"     file--> bargain/bargain/bargain.wxml
+image漏网之鱼:    src--> "{{ item.head_image }}"     file--> bargain/bargain/bargain.wxml
+image漏网之鱼:    src--> "{{ item }}"     file--> bargain/detail/detail.wxml
+image漏网之鱼:    src--> "{{ member['avatar'] }}"     file--> commission/pages/index.wxml
+image漏网之鱼:    src--> "{{ item.url }}"     file--> pages/common/diyform.wxml
+image漏网之鱼:    src--> "{{ item }}"     file--> pages/common/diyform_view.wxml
+image漏网之鱼:    src--> "{{val.thumb}}"     file--> pages/common/gift-picker.wxml
+image漏网之鱼:    src--> "{{route=='home'?icons.home_red:icons.home}}"     file--> pages/common/menu.wxml
+image漏网之鱼:    src--> "{{route=='category'?icons.cate_red:icons.cate}}"     file--> pages/common/menu.wxml
+image漏网之鱼:    src--> "{{route=='cart'?icons.cart_red:icons.cart}}"     file--> pages/common/menu.wxml
+image漏网之鱼:    src--> "{{route=='member'?icons.people_red:icons.people}}"     file--> pages/common/menu.wxml
+image漏网之鱼:    src--> "{{goods.thumb}}"     file--> pages/common/goods-picker.wxml
+image漏网之鱼:    src--> "{{goods.thumb}}"     file--> pages/common/goods-picker.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/common/goods-picker.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/creditshop/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/creditshop/index.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/shouquan.png'}}"     file--> pages/custom/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/bg1.png'}}"     file--> pages/custom/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/index/adv.wxml
+image漏网之鱼:    src--> "{{item.imgurl}}"     file--> pages/index/adver.wxml
+image漏网之鱼:    src--> "{{item.imgurl}}"     file--> pages/index/adver.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/index/banner.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/index/banner.wxml
+image漏网之鱼:    src--> "{{item.data[0].img}}"     file--> pages/index/cube.wxml
+image漏网之鱼:    src--> "{{item.data[0].img}}"     file--> pages/index/cube.wxml
+image漏网之鱼:    src--> "{{item.data[1].img}}"     file--> pages/index/cube.wxml
+image漏网之鱼:    src--> "{{item.data[1].img}}"     file--> pages/index/cube.wxml
+image漏网之鱼:    src--> "{{item.data[2].img}}"     file--> pages/index/cube.wxml
+image漏网之鱼:    src--> "{{item.data[2].img}}"     file--> pages/index/cube.wxml
+image漏网之鱼:    src--> "{{item.data[3].img}}"     file--> pages/index/cube.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/index/index.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/shouquan.png'}}"     file--> pages/index/index.wxml
+image漏网之鱼:    src--> " {{ imgUrl + '/coupon/bg1.png'}}"     file--> pages/index/index.wxml
+image漏网之鱼:    src--> "{{item.icon}}"     file--> pages/index/nav.wxml
+image漏网之鱼:    src--> "{{hotimg}}"     file--> pages/index/notice.wxml
+image漏网之鱼:    src--> "{{notification}}"     file--> pages/index/notice.wxml
+image漏网之鱼:    src--> "{{logo}}"     file--> pages/map/index.wxml
+image漏网之鱼:    src--> "{{ val.thumb }}"     file--> pages/order/index.wxml
+image漏网之鱼:    src--> "{{val.thumb}}"     file--> pages/order/index.wxml
+image漏网之鱼:    src--> "{{main.style.shopbg}}"     file--> pages/quickbuy/index.wxml
+image漏网之鱼:    src--> "{{main.style.shoplogo}}"     file--> pages/quickbuy/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/quickbuy/index.wxml
+image漏网之鱼:    src--> "{{goods.thumb}}"     file--> pages/quickbuy/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/verifygoods/index.wxml
+image漏网之鱼:    src--> "{{item.attr.src}}"     file--> utils/wxParse/wxParse.wxml
+image漏网之鱼:    src--> "{{item.baseSrc}}{{item.text}}"     file--> utils/wxParse/wxParse.wxml
+image漏网之鱼:    src--> "{{ item.avatar }}"     file--> commission/pages/down/index.wxml
+image漏网之鱼:    src--> "{{ g.thumb }}"     file--> commission/pages/log/detail.wxml
+image漏网之鱼:    src--> "{{ img }}"     file--> commission/pages/qrcode/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> commission/pages/poster/index.wxml
+image漏网之鱼:    src--> "{{check}}"     file--> commission/pages/poster/index.wxml
+image漏网之鱼:    src--> "{{item.poster}}"     file--> commission/pages/poster/index.wxml
+image漏网之鱼:    src--> "{{ set['regbg'] }}"     file--> commission/pages/register/index.wxml
+image漏网之鱼:    src--> "{{ buy_goods['thumb'] }}"     file--> commission/pages/register/index.wxml
+image漏网之鱼:    src--> "{{item.buyer.avatar}}"     file--> commission/pages/order/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> commission/pages/order/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> commission/pages/return/index.wxml
+image漏网之鱼:    src--> "{{item.avatar}}"     file--> dividend/pages/down/index.wxml
+image漏网之鱼:    src--> "{{imgUrl + '/demo/logo.jpg'}}"     file--> dividend/pages/index/index.wxml
+image漏网之鱼:    src--> "{{message.member.avatar || (imgUrl + 'plugin/app/static/images/wxapp/demo/logo.jpg')}}"     file--> dividend/pages/index/index.wxml
+image漏网之鱼:    src--> "{{ item.buyer.avatar }}"     file--> dividend/pages/order/index.wxml
+image漏网之鱼:    src--> "{{items.thumb}}"     file--> dividend/pages/order/index.wxml
+image漏网之鱼:    src--> "{{message.set.regbg || ( imgUrl + 'plugin/app/static/images/wxapp/banner.png')}}"     file--> dividend/pages/register/index.wxml
+image漏网之鱼:    src--> "{{ thumb }}"     file--> groups/pages/express/index.wxml
+image漏网之鱼:    src--> "{{data.goods.thumb}}"     file--> groups/pages/confirm/index.wxml
+image漏网之鱼:    src--> "{{item}}"     file--> groups/pages/goods/index.wxml
+image漏网之鱼:    src--> "{{optiondata.thumb || data.thumb}}"     file--> groups/pages/goods/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> groups/pages/category/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> groups/pages/index/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> groups/pages/index/index.wxml
+image漏网之鱼:    src--> "{{data.goods.thumb}}"     file--> groups/pages/groups_detail/index.wxml
+image漏网之鱼:    src--> "{{item.avatar}}"     file--> groups/pages/groups_detail/index.wxml
+image漏网之鱼:    src--> "{{item.avatar}}"     file--> groups/pages/groups_detail/index.wxml
+image漏网之鱼:    src--> "{{optiondata.thumb || data.goods.thumb}}"     file--> groups/pages/groups_detail/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> groups/pages/mygroups/index.wxml
+image漏网之鱼:    src--> "{{data.thumb}}"     file--> groups/pages/jointeam/index.wxml
+image漏网之鱼:    src--> "{{item.avatar}}"     file--> groups/pages/jointeam/index.wxml
+image漏网之鱼:    src--> "{{data.thumb}}"     file--> groups/pages/join/index.wxml
+image漏网之鱼:    src--> "{{optiondata.thumb || data.thumb}}"     file--> groups/pages/join/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> groups/pages/order/index.wxml
+image漏网之鱼:    src--> "{{ goods.thumb }}"     file--> groups/pages/order_detail/index.wxml
+image漏网之鱼:    src--> "{{ item }}"     file--> groups/pages/refund/index.wxml
+image漏网之鱼:    src--> "{{ log.thumb }}"     file--> pages/creditshop/comment/index.wxml
+image漏网之鱼:    src--> "{{ item }}"     file--> pages/creditshop/comment/index.wxml
+image漏网之鱼:    src--> "{{ thumb }}"     file--> pages/creditshop/express/index.wxml
+image漏网之鱼:    src--> "{{goods.thumb}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{item.headimg}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{ite}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{ite}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{item.headimg}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{ite}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{ite}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{item.avatar}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{optiongoods.thumb}}"     file--> pages/creditshop/detail/index.wxml
+image漏网之鱼:    src--> "{{goods.thumb}}"     file--> pages/creditshop/create/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/creditshop/log/index.wxml
+image漏网之鱼:    src--> "{{qrcode}}"     file--> pages/creditshop/verify/index.wxml
+image漏网之鱼:    src--> "{{diyitem.params.headurl}}"     file--> pages/diy/template/tpl_audio.wxml
+image漏网之鱼:    src--> "{{diyitem.params.headurl}}"     file--> pages/diy/template/tpl_audio.wxml
+image漏网之鱼:    src--> "{{item.headimgurl}}"     file--> pages/diy/template/tpl_detail_comment.wxml
+image漏网之鱼:    src--> "{{image}}"     file--> pages/diy/template/tpl_detail_comment.wxml
+image漏网之鱼:    src--> "{{replyImage}}"     file--> pages/diy/template/tpl_detail_comment.wxml
+image漏网之鱼:    src--> "{{appendReplyImage}}"     file--> pages/diy/template/tpl_detail_comment.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/diy/template/tpl_detail_package.wxml
+image漏网之鱼:    src--> "{{childitem.imgurl}}"     file--> pages/diy/template/tpl_banner.wxml
+image漏网之鱼:    src--> "{{childitem.imgurl}}"     file--> pages/diy/template/tpl_banner.wxml
+image漏网之鱼:    src--> "{{diyitem.params.imgurl}}"     file--> pages/diy/template/tpl_copyright.wxml
+image漏网之鱼:    src--> "{{diyitem.params.imgurl}}"     file--> pages/diy/template/tpl_copyright.wxml
+image漏网之鱼:    src--> "{{copyright.params.imgurl}}"     file--> pages/diy/template/tpl_copyright.wxml
+image漏网之鱼:    src--> "{{copyright.params.imgurl}}"     file--> pages/diy/template/tpl_copyright.wxml
+image漏网之鱼:    src--> "{{goods.shopdetail.logo}}"     file--> pages/diy/template/tpl_detail_shop.wxml
+image漏网之鱼:    src--> "{{goods.thumb}}"     file--> pages/diy/template/tpl_detail_swipe.wxml
+image漏网之鱼:    src--> "{{play}}"     file--> pages/diy/template/tpl_detail_swipe.wxml
+image漏网之鱼:    src--> "{{item}}"     file--> pages/diy/template/tpl_detail_swipe.wxml
+image漏网之鱼:    src--> "{{diyitem.params.leftnavimg}}"     file--> pages/diy/template/tpl_fixedsearch.wxml
+image漏网之鱼:    src--> "{{diyitem.params.rightnavimg}}"     file--> pages/diy/template/tpl_fixedsearch.wxml
+image漏网之鱼:    src--> "{{diyitem.params.goodsiconsrc}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{diyitem.params.goodsiconsrc}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{diyitem.params.goodsiconsrc}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{diyitem.params.goodsiconsrc}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{diyitem.params.saleout == 0?"/static/images/saleout-2.png":diyitem.params.saleout}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{childitem.thumb}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{childitem.thumb}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{childitem.thumb}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{childitem.thumb}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{diyitem.params.saleout == 0?"/static/images/saleout-2.png":diyitem.params.saleout}}"     file--> pages/diy/template/tpl_goods.wxml
+image漏网之鱼:    src--> "{{member.avatar||'/static/images/noface.png'}}"     file--> pages/diy/template/tpl_memberhead.wxml
+image漏网之鱼:    src--> "{{member.avatar||'/static/images/noface.png'}}"     file--> pages/diy/template/tpl_memberhead.wxml
+image漏网之鱼:    src--> "{{childitem.imgurl}}"     file--> pages/diy/template/tpl_picture.wxml
+image漏网之鱼:    src--> "{{item.imgurl}}"     file--> pages/diy/template/tpl_pictures.wxml
+image漏网之鱼:    src--> "{{item.imgurl}}"     file--> pages/diy/template/tpl_pictures.wxml
+image漏网之鱼:    src--> "{{diyitem.data[0].imgurl}}"     file--> pages/diy/template/tpl_picturew.wxml
+image漏网之鱼:    src--> "{{diyitem.data[1].imgurl}}"     file--> pages/diy/template/tpl_picturew.wxml
+image漏网之鱼:    src--> "{{diyitem.data[1].imgurl}}"     file--> pages/diy/template/tpl_picturew.wxml
+image漏网之鱼:    src--> "{{diyitem.data[2].imgurl}}"     file--> pages/diy/template/tpl_picturew.wxml
+image漏网之鱼:    src--> "{{diyitem.data[2].imgurl}}"     file--> pages/diy/template/tpl_picturew.wxml
+image漏网之鱼:    src--> "{{diyitem.data[3].imgurl}}"     file--> pages/diy/template/tpl_picturew.wxml
+image漏网之鱼:    src--> "{{pic_item.imgurl}}"     file--> pages/diy/template/tpl_picturew.wxml
+image漏网之鱼:    src--> "{{childitem.imgurl}}"     file--> pages/diy/template/tpl_picturew.wxml
+image漏网之鱼:    src--> "{{ adv.imgurl }}"     file--> pages/diy/template/tpl_seckill_advs.wxml
+image漏网之鱼:    src--> "{{goods_item.thumb}}"     file--> pages/diy/template/tpl_seckill_list.wxml
+image漏网之鱼:    src--> "{{childitem.imgurl}}"     file--> pages/diy/template/tpl_menu.wxml
+image漏网之鱼:    src--> "{{menu_item.imgurl}}"     file--> pages/diy/template/tpl_menu.wxml
+image漏网之鱼:    src--> "{{ diyitem.params.iconurl }}"     file--> pages/diy/template/tpl_seckillgroup.wxml
+image漏网之鱼:    src--> "{{goods_item.thumb}}"     file--> pages/diy/template/tpl_seckillgroup.wxml
+image漏网之鱼:    src--> "{{item.total <= 0?"/static/images/saleout-2.png":diyitem.params.saleout}}"     file--> pages/diy/template/tpl_tabbarlist.wxml
+image漏网之鱼:    src--> "{{item.total <= 0?"/static/images/saleout-2.png":diyitem.params.saleout}}"     file--> pages/diy/template/tpl_tablist.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/diy/template/tpl_verifygoods.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/share/wechat.png'}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/share/post.png'}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{goods.thumb}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{play}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{item}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{goods.shopdetail.logo}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{item}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{item.headimgurl}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{image}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{replyImage}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{appendReplyImage}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/shouquan.png'}}"     file--> pages/goods/detail/index.wxml
+image漏网之鱼:    src--> "{{diyitem.params.iconurl}}"     file--> pages/diy/template/tpl_notice.wxml
+image漏网之鱼:    src--> "{{diyitem.params.poster}}"     file--> pages/diy/template/tpl_video.wxml
+image漏网之鱼:    src--> "{{play}}"     file--> pages/diy/template/tpl_video.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/shouquan.png'}}"     file--> pages/goods/index/index.wxml
+image漏网之鱼:    src--> "{{isfilter?'/static/images/icon-red/filter.png':'/static/images/icon/filter.png'}}"     file--> pages/goods/index/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/goods/package/index.wxml
+image漏网之鱼:    src--> "{{item2.thumb}}"     file--> pages/goods/package/index.wxml
+image漏网之鱼:    src--> "{{Image}}"     file--> pages/goods/poster/poster.wxml
+image漏网之鱼:    src--> "{{ verifycode_img }}"     file--> pages/member/bind/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/member/favorite/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/member/history/index.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/shouquan.png'}}"     file--> pages/member/cart/index.wxml
+image漏网之鱼:    src--> "{{ val.thumb }}"     file--> pages/member/cart/index.wxml
+image漏网之鱼:    src--> "{{ val.thumb }}"     file--> pages/member/cart/index.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/shouquan.png'}}"     file--> pages/member/index/index.wxml
+image漏网之鱼:    src--> "{{member.avatar||'/static/images/noface.png'}}"     file--> pages/member/index/index.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/member/index/index.wxml
+image漏网之鱼:    src--> "{{ item.thumb }}"     file--> pages/order/comment/index.wxml
+image漏网之鱼:    src--> "{{ item }}"     file--> pages/order/comment/index.wxml
+image漏网之鱼:    src--> "{{ val.thumb }}"     file--> pages/order/create/index.wxml
+image漏网之鱼:    src--> "{{val.thumb}}"     file--> pages/order/create/index.wxml
+image漏网之鱼:    src--> "{{ val.thumb }}"     file--> pages/order/cycle/order.wxml
+image漏网之鱼:    src--> "{{val.thumb}}"     file--> pages/order/cycle/order.wxml
+image漏网之鱼:    src--> "{{ goods.thumb }}"     file--> pages/order/express/index.wxml
+image漏网之鱼:    src--> "{{ thumb }}"     file--> pages/order/express/index.wxml
+image漏网之鱼:    src--> "{{ item.thumb }}"     file--> pages/order/detail/index.wxml
+image漏网之鱼:    src--> "{{gitem.thumb}}"     file--> pages/order/detail/index.wxml
+image漏网之鱼:    src--> "{{ item }}"     file--> pages/order/singlerefund/index.wxml
+image漏网之鱼:    src--> "{{ qrcode }}"     file--> pages/order/public/verify.wxml
+image漏网之鱼:    src--> "{{ item }}"     file--> pages/order/refund/index.wxml
+image漏网之鱼:    src--> "{{ store.logo }}"     file--> pages/order/store/map.wxml
+image漏网之鱼:    src--> "{{imgUrl + '/plugin/app/static/images/wxapp/accredit.png'}}"     file--> pages/message/auth/index.wxml
+image漏网之鱼:    src--> "{{verifygoods.thumb}}"     file--> pages/verifygoods/detail/index.wxml
+image漏网之鱼:    src--> "{{qrcode}}"     file--> pages/verifygoods/detail/index.wxml
+image漏网之鱼:    src--> "{{goods_item.thumb}}"     file--> seckill/pages/index/index.wxml
+image漏网之鱼:    src--> "{{advimg}}"     file--> pages/shop/caregory/index.wxml
+image漏网之鱼:    src--> "{{item.advimg}}"     file--> pages/shop/caregory/index.wxml
+image漏网之鱼:    src--> "{{item.thumb||icons.nopic}}"     file--> pages/shop/caregory/index.wxml
+image漏网之鱼:    src--> "{{item.thumb||icons.nopic}}"     file--> pages/shop/caregory/index.wxml
+image漏网之鱼:    src--> "{{items.thumb||icons.nopic}}"     file--> pages/shop/caregory/index.wxml
+image漏网之鱼:    src--> "{{item.thumb||icons.nopic}}"     file--> pages/shop/caregory/index.wxml
+image漏网之鱼:    src--> "{{items.thumb}}"     file--> dividend/pages/log/detail/index.wxml
+image漏网之鱼:    src--> "{{goods.thumb}}"     file--> pages/creditshop/log/detail/index.wxml
+image漏网之鱼:    src--> "{{Image}}"     file--> pages/goods/detail/poster/poster.wxml
+image漏网之鱼:    src--> "{{item.thumb}}"     file--> pages/goods/package/detail/index.wxml
+image漏网之鱼:    src--> "https://api.clubmall.cn/attachment/images/7/2017/11/qg6S1Gb6DKM4I16KW4NMGDCkdcko1B.jpg"     file--> pages/integral/order/detail/index.wxml
+image漏网之鱼:    src--> "https://jqnyrv.ifkvip.com/addons/ewei_shopv2/template/mobile/default/static/images/coupon/ling.png"     file--> pages/order/pay/coupons/coupons.wxml
+image漏网之鱼:    src--> " https://jqnyrv.ifkvip.com/attachment/images/4/2017/12/k9z004aLNRNROWWiUNWNloIWU7l90l.png"     file--> pages/order/pay/coupons/coupons.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/bg7s.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/sbg2.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + '/coupon/bg4.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/bg4.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/bg4.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/bg4.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/bg4.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/circle.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{ imgUrl + 'plugin/app/static/images/wxapp/coupon/circle.png'}}"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "https://wx.qlogo.cn/mmopen/8ibw9tp1l4iaNFVotnNciaYicoO8WlXickrib7iccC0Ijiav0FOblUic7KroF12qmbgiciaEakiasUUfTAahRof4eBcQ8MTzstpdXShhddNY/132"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "https://wx.qlogo.cn/mmopen/8ibw9tp1l4iaNFVotnNciaYicoO8WlXickrib7iccC0Ijiav0FOblUic7KroF12qmbgiciaEakiasUUfTAahRof4eBcQ8MTzstpdXShhddNY/132"     file--> pages/order/pay/sharecoupon/index.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/coupon/bg7s.png' }}"     file--> pages/order/pay/share/share.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/coupon/share.png' }}"     file--> pages/order/pay/share/share.wxml
+image漏网之鱼:    src--> "{{imgUrl + 'plugin/app/static/images/wxapp/coupon/guide_1.png' }}"     file--> pages/order/pay/share/share.wxml
+image漏网之鱼:    src--> "{{ item.thumb }}"     file--> pages/sale/coupon/my/showcoupons2/index.wxml
+Error: 解析文件出错: /Users/terry/EWEIWX/commission/pages/register/index.js     error: SyntaxError: Unterminated string constant (93:38)
+
+转换完成:
+当前转换模式：【Hbuilder X】，生成HbuilderX项目。
+优点：上手快，项目结构较简单；
+缺点：资源路径会因为表达式而无法全部被修复(推荐vue-cli模式)
+注意：当看到"image漏网之鱼"，意味着您需要手动调整对应代码，当image标签的src属性是含变量或表达式，工具还无法做到100%转换，需要手动修改为相对/static目录的路径(使用vue-cli模式可以解决，参数：-c)
+另外，代码<template is="abc" data=""/>里data属性，除了不支持...扩展运算符(因uni-app现在还不支持v-bind="")，其余参数形式都支持，望知悉！
+日志说明：试图转换template里data参数为Object时报错 --> 表示<template data="abc">里data的属性可能含有...扩展运算符，已将data重命为error-data=""，需转换后手工调整
+image漏网之鱼 --> 为HbuilderX模式时，需要将资源移动到static，并且修复相应文件路径，有可能src为网络文件，有可能为变量或表达式，可能会导致转换后文件找不到，因此提示一下

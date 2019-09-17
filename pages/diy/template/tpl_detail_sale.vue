@@ -1,0 +1,181 @@
+<template>
+<view>
+<!--预售发货 start-->
+        <block v-if="goods.ispresell==1 && goods.preselltimestart < now && (preselltimeend > now || preselltimeend == 0)">  
+            <view class="fui-cell-group fui-cell-click fui-sale-group" style="margin-top:0">
+                <view class="fui-list">
+                    <view class="fui-list-media">
+                        <view class="fui-cell-text">
+                            <span class="fui-label fui-label-safety">预售</span>
+                        </view>
+                    </view>
+                    <view class="fui-list-inner" style="font-size:26rpx;color:#666;">
+                        <view v-if="preselltimeend > 0">结束时间：{{goods.preselldateend}}</view>
+                          预计发货：
+                        <block v-if="goods.presellsendtype>0">
+                          购买后{{goods.presellsendtime}}天发货
+                        </block>
+                        <block v-else>
+                          {{goods['presellsendstatrttime']}}
+                        </block>
+                    </view>
+                </view>
+            </view>
+        </block>
+        <!--预售发货 end-->
+        <!--wx:if="{{goods.seckillinfo==false}}"  -->
+        <view class="favourable" v-if="!goods.seckillinfo">
+            <block v-if="goods.buyagain >0">
+                <view class="fui-cell-group fui-sale-group" style="margin-top:0">
+                    <view class="fui-cell">
+                        <view class="fui-cell-text" style="white-space:normal;">此商品二次购买 可享受<span class="text-danger">{{goods.buyagain}}</span>折优惠
+                        <block v-if="!goods.buyagain_sale">
+                            <view>二次购买的时候 不与其他优惠共享</view> 
+                        </block>
+                        </view>
+                    </view>
+                </view>
+            </block>
+
+            <view class="fui-cell-group fui-cell-click fui-sale-group noborder" @tap="couponPicker" v-if="coupon.length>0">
+                <view class="fui-cell">
+                    <view class="fui-cell-text coupon-selector">
+                        <span style="margin-right: 0.25rem">优惠券</span>
+                        <span class="coupon-mini" v-for="(item, index) in coupon" :key="index" v-if="index<5">
+                        <span v-if="item.backpre" class="subtitle">￥</span>{{item.backmoney}}<span class="subtitle" v-if="item.backtype==1">折</span>
+                        </span>
+                    </view>
+                    <view class="fui-cell-remark">
+                      <text v-if="coupon_l>5">更多</text>
+                    </view>
+                </view>
+            </view>
+            <block v-if="limits">
+	            <block v-if="goods.isdiscount==0 || (goods.isdiscount!=0 && goods.isdiscount_time < now)">
+	                <block v-if="!goods.memberprice=='' && goods.memberprice!=minprice && !goods.levelbuy==0">
+	                    <view class="fui-cell-group fui-sale-group">
+	                        <view class="fui-cell">
+	                            <view class="fui-cell-label" style="color:#000;width:86rpx">会员</view> 
+                              <view class="fui-cell-text">
+	                            <view class="sale-line"><span class="sale-tip">{{goods.memberprice.levelname}}</span> 可享受 <span class="text-danger">¥{{goods.memberprice.price}}</span> 的价格</view>
+                              </view>
+	                        </view>
+	                    </view>
+	                </block>
+	            </block>
+            </block>
+            <!--赠品start-->
+            <block v-if="limits">
+	            <block v-if="goods.isgift==1">
+	                <view class="fui-cell-group fui-sale-group" @tap="giftPicker">
+	                    <view class="fui-cell">
+	                        <view class="fui-cell-label" style="color:#000;width:98rpx">赠品</view> 
+	                        <view class="fui-cell-info" v-if="goods.gifts.length==1">{{goods.gifts[0].title}}</view>
+	                        <view class="fui-cell-info" v-else :style="(gift_title?'':'color:#666;')">{{gift_title?gift_title:'请选择赠品'}}</view>
+	                        <view class="fui-cell-remark"></view>
+	                    </view>
+	                </view>
+	            </block>
+            </block>
+        <!--赠品end--> 
+        <!--营销start-->
+        <block v-if="limits && activity != ''">
+	            <block>
+	                    <view class="fui-cell-group fui-sale-group" style="margin-top: 1rpx;" @tap="activityPicker">
+	                        <view class="fui-cell">
+	                            <view class="fui-cell-label" style="color:#000;width:86rpx">活动</view> 
+	                            <view class="fui-cell-text">
+                                <!--满减  -->
+                                 <view v-if="activity.enough || activity.merch_enough" class="sale-line" style="font-size: 24rpx;">
+                                  <span class="sale-tip">满减</span> 
+                                  <text v-if="activity.enough">全场满{{activity.enough[0].enough}}立减{{activity.enough[0].money}};</text>
+                                  <text v-if="activity.merch_enough">本店满{{activity.merch_enough[0].enough}}立减{{activity.merch_enough[0].give}};</text>
+	                              </view> 
+                                <!--全返  -->
+                                <view v-if="fullbackgoods" class="sale-line" style="font-size: 24rpx;">
+                                  <span class="sale-tip">{{ goods.fullbacktext }}</span> 
+                                  该商品享受 
+                                  <span v-if="fullbackgoods.type == 0" class="text-danger">¥{{fullbackgoods.maxallfullbackallprice}}</span>
+                                  <span v-if="fullbackgoods.type == 1" class="text-danger">{{maxallfullbackallratio}}%</span>
+                                  的{{ goods.fullbacktext }}
+	                              </view>
+                                <!--包邮  -->
+                                <view v-if="activity.postfree" class="sale-line" style="font-size: 24rpx;">
+                                   <span class="sale-tip">包邮</span> 
+                                   <span v-if="activity.postfree.goods"> 本商品包邮;</span>
+                                   <text v-if="activity.postfree.scope">
+                                      <text>{{activity.postfree.scope}}</text><text v-if="activity.postfree.enoughfree>0">满￥{{activity.postfree.enoughfree}}</text><text>包邮</text>
+                                  </text>
+                                  <text v-if="activity.postfree.num">单品买{{activity.postfree.num}}件包邮；</text>
+                                  <text v-if="activity.postfree.price">单品买￥{{activity.postfree.price}}包邮</text>
+                                </view>
+                                <!--复购 -->
+                                 <view v-if="activity.buyagain" class="sale-line" style="font-size: 24rpx;">
+                                  <span class="sale-tip">复购</span> 
+                                  此商品重复购买可享受 {{activity.buyagain.discount}}折;
+                                  <span v-if="activity.buyagain.buyagain_sale==0">重复购买 不与其他优惠共享</span>
+	                              </view> 
+                                 <!--积分  -->
+                                 <view v-if="activity.credit" class="sale-line" style="font-size: 24rpx;">
+                                  <span class="sale-tip">{{credittext}}</span> 
+                                
+                                  <text v-if="activity.credit.deduct">最高抵扣￥{{activity.credit.deduct}}；</text>
+                                 <text v-if="activity.credit.give">购买赠送{{activity.credit.give}}积分</text>
+	                              </view> 
+                              </view>
+	                            <view class="fui-cell-remark"></view> 
+	                        </view>
+	                    </view>
+	            </block>
+            </block>
+            <!--营销end-->
+            <!--同城配送start-->
+          <block v-if="goods.city_express_state">
+            <view class="fui-cell-group fui-sale-group" style="margin-top: 1rpx;" @tap="sendclick">
+              <view class="fui-cell">
+                <view class="fui-cell-label" style="color:#000;width:86rpx">配送</view>
+                <view class="fui-cell-label sale-line" style="flex: 1;font-size: 24rpx;">
+                  <span class="sale-tip">同城</span> 查看商家位置
+                </view>
+                <view class="fui-cell-remark"></view>
+              </view>
+            </view>
+          </block>
+            <!--同城配送end-->
+        </view>        
+        <!--不配送区域start-->
+        <block v-if="goods.citys.citys.length>0 && goods.type !=5 && goods.isverify!=2">
+            <view class="fui-cell-group fui-cell-click  fui-sale-group" style="margin-top:0" id="city-picker" @tap="cityPicker" data-class="city-picker" :data-tap="active">
+                <view class="fui-cell">
+                    <view class="fui-cell-text">{{ goods.citys.onlysent == 0?'不' :'只'  }}配送区域:
+                        <block v-for="(item, index) in goods.citys.citys" :key="index">{{item}}</block>
+                    </view>
+                    <view class="fui-cell-remark"></view>
+                </view>
+            </view>
+        </block>
+        <!--不配送区域end-->
+        <!--标签start-->
+        <block v-if="goods.hasServices || goods.labelname">
+            <view class="fui-cell-group fui-option-group" style="margin-top:0">
+                <view class="goods-label-demo">    
+                    <view :class="'goods-label-list goods-label-style' + labels.style+1" style="background:#fafafa">
+                    <block v-for="(item, index) in labels.list" :key="index"> 
+                        <span><icon class="icox icox-duihao1" v-if="labels.style<2"></icon><text>{{item}}</text></span>
+                    </block>
+                        <view style="clear: both;"></view>
+                    </view>
+                </view>
+            </view>
+        </block>
+</view>
+</template>
+
+
+	<script> 
+		
+		export default {
+			props: []
+		}
+	</script> 
+									

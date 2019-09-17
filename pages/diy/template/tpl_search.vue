@@ -1,0 +1,31 @@
+<template>
+<!--搜索start-->
+    <view class="category-search">
+        <view class="weui-flex">
+            <view class="weui-flex__item category-search-form">
+                <view class="flex-head-search" id="searchBar" :style="'background:' + diyitem.style.background + ';padding:' + diyitem.style.paddingtop + 'rpx ' + diyitem.style.paddingleft + 'rpx'">
+                    <navigator :class="'weui-search-bar__form ' + diyitem.style.searchstyle" hover-class="none" data-url="/pages/goods/index/index?fromsearch=1" @tap="navigate" :style="'background:' + diyitem.style.inputbackground + ';color:' + diyitem.style.color">
+                        <view class="weui-search-bar__box category-search-box">
+                            <view class="flex-icon-search">
+                               <text class="icox icox-search" :style="'color:' + diyitem.style.iconcolor"></text>
+                            </view>
+                            <view class="weui-search-bar__input flex-input" :style="'text-align:' + diyitem.style.textalign">
+                              {{diyitem.params.placeholder}}
+                            </view>
+                        </view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+    <!--搜索end-->
+</template>
+
+
+	<script> 
+		
+		export default {
+			props: []
+		}
+	</script> 
+									

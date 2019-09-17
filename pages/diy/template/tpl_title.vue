@@ -1,0 +1,15 @@
+<template>
+<view @tap="navigate" class="fui-title diypage-title" :style="'background:' + diyitem.style.background + ';color:' + diyitem.style.color + ';padding:' + diyitem.style.paddingtop + 'rpx ' + diyitem.style.paddingleft + 'rpx;font-size:' + diyitem.style.fontsize + 'rpx;text-align:' + diyitem.style.textalign" :data-url="diyitem.params.link">
+  <text :class="'icox ' + diyitem.params.icon"></text>
+  {{diyitem.params.title}}
+</view>
+</template>
+
+
+	<script> 
+		
+		export default {
+			props: []
+		}
+	</script> 
+									
